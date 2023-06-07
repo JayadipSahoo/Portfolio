@@ -1,28 +1,28 @@
 import Project_card from "../project_card/Project_card";
-import first from "./imgs/Rectangle 22.jpg";
-import second from "./imgs/Rectangle 22.png";
-import third from "./imgs/Rectangle 22 (1).png";
+import first from "./imgs/Project1.png";
+import second from "./imgs/project2.png";
+import third from "./imgs/project3.png";
 
 const Projects = () => {
   // date
   const projects = [
     {
       img: first,
-      langs: ["html", "css", "javascript", "react", "tailwind css"],
-      title: "ChertNodes",
-      disc: "Minecraft servers hosting ",
+      langs: ["html", "css", "javascript", "react", "tailwind css","Vite","OpenApi"],
+      title: "Sum It Ai",
+      disc: "Summarize Any Article or About Any Website",
     },
     {
       img: second,
-      langs: ["html", "css", "javascript", "Node.js"],
-      title: "ProtectX",
-      disc: "Discord anti-crash bot ",
+      langs: ["html", "css", "javascript", "Tailwind","AOS","Vite"],
+      title: "ShushiMan",
+      disc: "Fully Responsive Animated Sushi Restuarant",
     },
     {
       img: third,
-      langs: ["html", "css", "javascript", "Node.js", "python"],
-      title: "Kahoot Answers Viewer",
-      disc: "Get answers to your kahoot quiz ",
+      langs: ["html", "css", "javascript", "Node.js", "Mongo","ExpressJS"],
+      title: "Todo-List",
+      disc: "Dynamic TodoList",
     },
   ];
 
