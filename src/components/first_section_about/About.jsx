@@ -14,7 +14,7 @@ const About = () => {
           <p className="text-[#ABB2BF] my-6">
             I craft responsive websites where technologies meet creativity
           </p>
-          <button className="text-white font-medium py-2 px-4 border duration-200 border-[#0FFF50] hover:bg-[#C778DD33]">
+          <button className="text-white font-medium py-2 px-4 border duration-200 border-[#0FFF50] hover:bg-[#0cffeb33]">
             Contact me!!
           </button>
         </div>

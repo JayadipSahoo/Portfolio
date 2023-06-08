@@ -18,7 +18,7 @@ const Project_card = ({ img, langs, title, disc }) => {
           <p className=" py-4 text-[#ABB2BF]">{disc}</p>
           {/* btns */}
           <div className="">
-            <button className=" py-2 px-4 text-white border border-[#0FFF50] hover:bg-[#0FFF50] duration-150">
+            <button className=" py-2 px-4 text-white border border-[#0FFF50] hover:bg-[#0cffebc5] duration-150">
               Live {"<"}~{">"}
             </button>
           </div>

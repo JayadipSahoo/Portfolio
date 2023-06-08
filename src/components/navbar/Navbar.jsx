@@ -1,6 +1,6 @@
-import Logo from './imgs/logo.png'
+import Logo from './imgs/js.png'
 import Close from './imgs/close.png'
-
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -12,32 +12,33 @@ const Navbar = () => {
           <div className="left flex gap-2 items-center font-bold text-white text-base">
             {/* logo */}
             <div className="img">
-              <img src={Logo} alt="" />
+              <img src={Logo} className='w-12 h-15' alt="" />
             </div>
-          Jayadip
+          Jayadip Sahoo
           </div>
           <div className="right flex items-center">
             <div className={`menu duration-300 flex-col justify-center md:flex-row flex fixed w-full ${!toggle ? `right-[-100%] top-0 bottom-0` : `right-0 top-0 bottom-0`} bg-[#282C33] md:static`}>
-              <a href="#">
+              
+              <NavLink to="/">
                 <li className="text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4">
                   <span className="text-[#0FFF50] font-medium">#</span>home
                 </li>
-              </a>
-              <a href="#">
+              </NavLink>
+              <NavLink to="/projects">
                 <li className="text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4">
                   <span className="text-[#0FFF50] font-medium">#</span>work
                 </li>
-              </a>
-              <a href="#">
+              </NavLink>
+              <NavLink to="/about">
                 <li className="text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4">
                   <span className="text-[#0FFF50] font-medium">#</span>about-me
                 </li>
-              </a>
-              <a href="#">
+              </NavLink>
+              <NavLink to="/contacts">
                 <li className="text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4">
                   <span className="text-[#0FFF50] font-medium">#</span>contacts
                 </li>
-              </a>
+              </NavLink>
               <div onClick={()=>setToggle(false)} className="close absolute block md:hidden right-3 top-3">
                 <img src={Close} alt="" />
               </div>

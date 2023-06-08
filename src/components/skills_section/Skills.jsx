@@ -6,7 +6,22 @@ const Skills = () => {
       title: "Languages",
       languages: ["Python","Javascript","C++","Ansi C"],
     },
-    { title: "Databases", languages: ["SQLite", "Mongo"] },
+    {
+      title: "Frameworks/Librarys",
+      languages: [
+        
+        "Vite",
+        "React",
+        "React Router",
+        "Particle.js",
+        "Flask",
+        "Node.js",
+        "Express.js",
+        "JQuery",
+       
+
+      ],
+    },
     {
       title: "Tools",
       languages: [
@@ -14,25 +29,18 @@ const Skills = () => {
         "Figma",
         "Adobe Photoshop",
         "Git",
+        "Bootstrap",
         "Font Awesome",
         "Linux",
       ],
     },
+    { title: "Databases", languages: ["SQLite", "Mongo"] },
+   
     {
       title: "Other",
-      languages: ["HTML", "CSS", "EJS", "SCSS", "REST", "JQuery"],
+      languages: ["HTML", "CSS", "EJS", "SCSS","TailwindCSS","BulmaCSS"],
     },
-    {
-      title: "Frameworks",
-      languages: [
-        "React",
-        "Vite",
-        "Particle.js",
-        "Flask",
-        "Node.js",
-        "Express.js",
-      ],
-    },
+    
   ];
   return (
     <>

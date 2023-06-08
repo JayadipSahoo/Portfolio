@@ -39,11 +39,11 @@ const Contact = () => {
                 {/* links */}
                 <div className="flex gap-1 items-center">
                   <img src={Discord} className='h-6 ml-1.5' alt="" />
-                  <span className="text-[#ABB2BF]" >Jayadip Sahoo</span>
+                  <span className="text-[#ABB2BF]" ><a href='https://www.linkedin.com/in/jayadip-sahoo-166165228'>Jayadip Sahoo</a></span>
                 </div>
                 <div className="flex gap-1 items-center">
                   <img src={Email}  alt="" />
-                  <span className="text-[#ABB2BF]">jayadip360@gmail.com</span>
+                  <span className="text-[#ABB2BF]"><a href="mailto:jayadip360@gmail.com">jayadip360@gmail.com</a></span>
                 </div>
               </div>
             </div>
