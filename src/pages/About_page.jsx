@@ -61,7 +61,7 @@ const About_page = () => {
               <p className="text-[#ABB2BF]">Who am i?</p>
             </div>
             {/* disc */}
-            <p className="text-[#ABB2BF] ">
+            <p  className="text-[#ABB2BF] ">
               Hola, I am Jayadip
               <br />
               <br />
