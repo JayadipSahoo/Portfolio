@@ -2,7 +2,7 @@ import Logo from './imgs/js.png'
 import Close from './imgs/close.png'
 import { NavLink } from "react-router-dom";
 import { useState} from "react";
-import 'aos/dist/aos.css'
+
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
     
