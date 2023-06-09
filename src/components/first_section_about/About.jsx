@@ -1,9 +1,14 @@
 import "./about.css";
+import { useEffect } from "react";
 import quote from "./imgs/quote.png"
 import Man from "./imgs/man.png"
-
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 const About = () => {
+  useEffect (()=>{
+    Aos.init({duration:1000})
+  }, [])
   return (
     <>
       <div className="px-5 max-w-[1560px] mx-auto min-h-screen pt-20 flex items-center justify-between flex-wrap">
