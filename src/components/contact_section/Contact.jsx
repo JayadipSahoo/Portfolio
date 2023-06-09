@@ -1,8 +1,12 @@
 import Discord from './imgs/linkedIn.jpg' 
 import Email from './imgs/Email.png' 
 
-
+import {Link} from 'react-router-dom'
 const Contact = () => {
+  const handleLinkClick=()=>{
+
+    window.scrollTo(0, 0);
+}
   return (
     <>
       <div className="px-5 max-w-[1560px] mx-auto mt-20 py-10" id='contact'>
@@ -27,12 +31,12 @@ const Contact = () => {
               other request or question, don’t hesitate to contact me
             </p>
             <div className="mt-7">
-              <a
-                href="/contact"
+              <Link
+                to="/contact" onClick={handleLinkClick}
                 className=" duration-150 hover:bg-[#10fff3d0] border border-[#0FFF50] px-4 py-2 text-white "
               >
                 <button>Others -{">"}</button>
-              </a>
+              </Link>
             </div>
           </div>
           

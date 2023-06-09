@@ -9,13 +9,15 @@ const Navbar = () => {
   return (
     <>
 
-      <div className=" z-30 fixed top-0 left-0 right-0 bg-[#282C33]">
+      <div className="pb-[20px] pt-0 z-30 fixed top-0 left-0 right-0 bg-[#282C33]">
         <div className=" px-5 max-w-[1560px] mx-auto flex items-center justify-between pt-6 my-2">
           <div className="left flex gap-2 items-center font-bold text-white text-base">
             {/* logo */}
+            <NavLink to='/'>
             <div className="img">
               <img src={Logo} className='w-12 h-15' alt="" />
             </div>
+            </NavLink>
           Jayadip Sahoo
           </div>
           <div className="right flex items-center">

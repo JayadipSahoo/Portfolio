@@ -1,8 +1,14 @@
 import Me from "./imgs/man.png"
-
+import {Link} from 'react-router-dom'
 const AboutSec = () => {
+  const handleLinkClick=()=>{
+
+    window.scrollTo(0, 0);
+}
+
   return (
     <>
+    
       <div className="px-5 max-w-[1560px] mx-auto mt-20 py-10">
         {/* bottom */}
         <div className=" flex-wrap flex items-center justify-between">
@@ -32,12 +38,12 @@ const AboutSec = () => {
             </p>
             {/* button */}
             <div className="mt-7">
-              <a
-                href="/about"
+              <Link
+                to="/about" onClick={handleLinkClick}
                 className=" duration-150 hover:bg-[#10fff3d0] border border-[#0FFF50] px-4 py-2 text-white "
               >
                 <button>Read more -{">"}</button>
-              </a>
+              </Link>
             </div>
           </div>
           {/* right */}

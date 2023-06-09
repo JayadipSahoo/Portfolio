@@ -21,7 +21,7 @@ const Footer = () => {
                 <span>Jayadip Sahoo</span>
               </div>
               {/* email */}
-              <span className="text-[#ABB2BF]">jayadip360@gmail.com</span>
+              <span className="text-[#ABB2BF] text-[12px] ">jayadip360@gmail.com</span>
             </div>
             {/* disc */}
             <div className="text-[#ffffff]">
