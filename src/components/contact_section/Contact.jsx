@@ -14,7 +14,7 @@ const Contact = () => {
               <div className="">
                 <span className="text-[#0FFF50]">#</span>contacts
               </div>
-              <div className="line w-1/3 h-px bg-[#0FFF50]"></div>
+              <div className="line w-1/3 h-px bg-[#0fff50]"></div>
             </div>
           </div>
         </div>
@@ -29,7 +29,7 @@ const Contact = () => {
             <div className="mt-7">
               <a
                 href="/contact"
-                className=" duration-150 hover:bg-[#C778DD33] border border-[#0FFF50] px-4 py-2 text-white "
+                className=" duration-150 hover:bg-[#10fff3d0] border border-[#0FFF50] px-4 py-2 text-white "
               >
                 <button>Others -{">"}</button>
               </a>

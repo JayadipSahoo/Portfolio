@@ -34,14 +34,14 @@ const AboutSec = () => {
             <div className="mt-7">
               <a
                 href="/about"
-                className=" duration-150 hover:bg-[#C778DD33] border border-[#0FFF50] px-4 py-2 text-white "
+                className=" duration-150 hover:bg-[#10fff3d0] border border-[#0FFF50] px-4 py-2 text-white "
               >
                 <button>Read more -{">"}</button>
               </a>
             </div>
           </div>
           {/* right */}
-          <div data-aos="zoom-in-left" data-aos-duration='2500' className=" mx-auto">
+          <div data-aos="zoom-in-left" data-aos-duration='2500' data-aos-delay='300' className=" mx-auto">
             <img className="mx-auto" src={Me} alt="" />
           </div>
         </div>
