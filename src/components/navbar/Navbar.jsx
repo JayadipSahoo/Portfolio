@@ -16,7 +16,7 @@ const Navbar = () => {
             <div className="img">
               <img src={Logo} className='w-12 h-15' alt="" />
             </div>
-          Jayadip
+          Jayadip Sahoo
           </div>
           <div className="right flex items-center">
             <div className={`menu duration-300 flex-col justify-center md:flex-row flex fixed w-full ${!toggle ? `right-[-100%] top-0 bottom-0` : `right-0 top-0 bottom-0`} bg-[#282C33] md:static`}>

@@ -18,7 +18,7 @@ const AboutSec = () => {
               </div>
             </div>
             {/* disc */}
-            <p data-aos="zoom-out-left" data-aos-duration='2500'  className="text-[#ABB2BF] ">
+            <p data-aos="zoom-out-left" data-aos-duration='2500' data-aos-delay='300'  className="text-[#ABB2BF] ">
               Hola, I am Jayadip
               <br />
               <br />

@@ -71,7 +71,7 @@ const Skills = () => {
                     </div>
                     <div className=" flex gap-2 border-t border-[#ABB2BF] flex-wrap p-2 text-[#0FFF50]">
                       {languages.map((e) => {
-                        return <span key={''}>{e}</span>;
+                        return <span>{e}</span>;
                       })}
                     </div>
                   </div>
