@@ -32,7 +32,7 @@ const Projects = () => {
         {/* top */}
         <div className=" flex justify-between items-center gap-5">
           {/* left */}
-          <div className=" text-white w-2/3 font-medium text-[32px] flex items-center gap-2">
+          <div data-aos="fade-right" data-aos-duration="500" className=" text-white w-2/3 font-medium text-[32px] flex items-center gap-2">
             <div className="">
               <span className="text-[#0FFF50]">#</span>projects
             </div>
@@ -46,7 +46,9 @@ const Projects = () => {
           </div>
         </div>
         {/* bottom */}
-        <div className="flex flex-wrap justify-between gap-4 my-12">
+        <div data-aos="zoom-in"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1500" className="flex flex-wrap justify-between gap-4 my-12">
           {/* cards */}
           {projects.map(({ img, langs, title, disc }) => {
             return (

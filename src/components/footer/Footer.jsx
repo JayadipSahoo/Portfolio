@@ -1,3 +1,8 @@
+import Logo from './imgs/js.png'
+import discord from './imgs/Discord.png'
+import github from './imgs/Github.png'
+
+
 const Footer = () => {
   return (
     <>
@@ -12,15 +17,15 @@ const Footer = () => {
             <div className=" flex items-center gap-8 mb-3 ">
               {/* logo */}
               <div className=" flex gap-2 items-center text-2xl text-white font-bold">
-                <img src={require("./imgs/Logo.png")} alt="" />
-                <span>Elias</span>
+                <img src={Logo} className='h-10' alt="" />
+                <span>Jayadip Sahoo</span>
               </div>
               {/* email */}
-              <span className="text-[#ABB2BF]">elias@elias.ml</span>
+              <span className="text-[#ABB2BF]">jayadip360@gmail.com</span>
             </div>
             {/* disc */}
             <div className="text-[#ffffff]">
-              <p>Web designer and front-end developer based in Ukraine</p>
+              <p>Web designer and front-end developer based in Odisha,India</p>
             </div>
           </div>
           {/* right */}
@@ -29,21 +34,18 @@ const Footer = () => {
             <h2 className=" text-white text-2xl font-medium mb-3">Media</h2>
             {/* media */}
             <div className="flex items-center gap-2">
-              <a href="#">
-                <img src={require("./imgs/Discord.png")} alt="" />
+              <a href="discord://discordapp.com/users/JayadipSahooo#3881">
+                <img src={discord} alt="" />
               </a>
-              <a href="#">
-                <img src={require("./imgs/Figma.png")} alt="" />
-              </a>
-              <a href="#">
-                <img src={require("./imgs/Github.png")} alt="" />
+              <a href="https://github.com/JayadipSahoo">
+                <img src={github} alt="" />
               </a>
             </div>
           </div>
         </div>
         {/* bottom */}
         <div className="text-center text-[#ABB2BF] pb-8 mt-12">
-          © Copyright 2022. Made by Elias
+          © Copyright 2023. Made by JDS
         </div>
       </div>
     </>

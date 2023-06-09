@@ -83,14 +83,16 @@ const smallProjects = [
 
 const Project_page = () => {
   return <>
-    <div className=" min-h pb-[50px] pt-[114px] px-5 max-w-[1560px] mx-auto">
+    <div className=" min-h pb-[50px] mt-20 py-10 pt-[114px] px-5 max-w-[1560px] mx-auto">
   {/* top / title */}
   <div className="">
     {/* projects */}
-    <div className=" text-white font-bold text-[32px]">
+    <div className=" text-white font-medium flex items-center gap-2 text-[32px]">
         <span className=" text-[#0FFF50]">/</span>
         <span>projects</span>
+        <div className="line w-1/3 h-px bg-[#0FFF50]"></div>
     </div>
+    
     {/* list */}
     <div className=" text-white mt-[14px]">List of my projects</div>
   </div>

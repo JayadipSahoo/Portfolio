@@ -5,7 +5,7 @@ import Home_page from "./pages/Home_page";
 import Project_page from "./pages/Project_page";
 import About_page from "./pages/About_page";
 import Contact_page from "./pages/Contact_page";
-
+import Footer from "./components/footer/Footer";
 function App() {
   return (
     <div className="bg-[#282C33]">
@@ -17,7 +17,7 @@ function App() {
         <Route path="/about" element={<About_page />} />
         <Route path="/contact" element={<Contact_page />} />
       </Routes>
-  
+      <Footer/>
     </div>
   );
 }

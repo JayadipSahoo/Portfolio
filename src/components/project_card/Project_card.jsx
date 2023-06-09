@@ -9,7 +9,7 @@ const Project_card = ({ img, langs, title, disc }) => {
         {/* skills */}
         <div className="flex gap-2 flex-wrap p-2 border-y border-[#ABB2BF]">
           {langs.map((e) => {
-            return <span className=" text-[#ABB2BF]">{e}</span>;
+            return <span key={''} className=" text-[#ABB2BF]">{e}</span>;
           })}
         </div>
         {/* disc */}
