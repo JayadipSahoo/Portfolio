@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import quote from "./imgs/quote.png"
 import Man from "./imgs/man.png"
 import Aos from "aos";
-import 'aos/dist/aos.css'
 
 const About = () => {
   useEffect (()=>{
