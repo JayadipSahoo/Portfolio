@@ -1,7 +1,7 @@
 import Project_card from "../project_card/Project_card";
 import first from "./imgs/Project1.png";
 import second from "./imgs/project2.png";
-import third from "./imgs/project3.png";
+import third from "./imgs/cropstop.png";
 
 const Projects = () => {
   // date
@@ -11,18 +11,21 @@ const Projects = () => {
       langs: ["html", "css", "javascript", "react", "tailwind css","Vite","OpenApi"],
       title: "Sum It Ai",
       disc: "Summarize Any Article or About Any Website",
+      link:"https://sum-it-ai.netlify.app"
     },
     {
       img: second,
       langs: ["html", "css", "javascript", "Tailwind","AOS","Vite"],
       title: "ShushiMan",
       disc: "Fully Responsive Animated Sushi Restuarant",
+      link:"https://chinese-restuarant.netlify.app"
     },
     {
       img: third,
-      langs: ["html", "css", "javascript", "Node.js", "Mongo","ExpressJS"],
-      title: "Todo-List",
-      disc: "Dynamic TodoList",
+      langs: ["html", "css", "javascript", "Saas", "Gsap"],
+      title: "Crop Stop",
+      disc: "A stop for farmers, to help them analyse the climate and soil for better harvest",
+      link:"https://jayadipsahoo.github.io/CropStop"
     },
   ];
 
@@ -50,7 +53,7 @@ const Projects = () => {
      data-aos-easing="ease-out-cubic"
      data-aos-duration="1500" className="flex flex-wrap justify-between gap-4 my-12">
           {/* cards */}
-          {projects.map(({ img, langs, title, disc }) => {
+          {projects.map(({ img, langs, title, disc,link }) => {
             return (
               <>
                 <Project_card
@@ -58,6 +61,7 @@ const Projects = () => {
                   langs={langs}
                   title={title}
                   disc={disc}
+                  link={link}
                 />
               </>
             );

@@ -1,4 +1,4 @@
-import Me from "./imgs/man.png"
+import Me from "./imgs/man2.png"
 import {Link} from 'react-router-dom'
 const AboutSec = () => {
   const handleLinkClick=()=>{
@@ -9,7 +9,7 @@ const AboutSec = () => {
   return (
     <>
     
-      <div className="px-5 max-w-[1560px] mx-auto mt-20 py-10">
+      <div className="px-10 max-w-[1560px] mx-auto mt-20 py-10">
         {/* bottom */}
         <div className=" flex-wrap flex items-center justify-between">
           {/* left */}
@@ -48,7 +48,7 @@ const AboutSec = () => {
           </div>
           {/* right */}
           <div data-aos="zoom-in-left" data-aos-duration='2500' data-aos-delay='300' className=" mx-auto">
-            <img className="mx-auto" src={Me} alt="" />
+            <img className="mx-auto h-[450px]" src={Me} alt="Jayadip" />
           </div>
         </div>
       </div>

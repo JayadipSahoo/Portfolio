@@ -17,24 +17,28 @@ import tenth from './projects/hover.png';
     langs: ["html", "css", "javascript", "react", "tailwind css","Vite","OpenApi"],
     title: "Sum It Ai",
     disc: "Summarize Any Article or About Any Website",
+    link:"https://sum-it-ai.netlify.app"
   },
   {
     img: second,
     langs: ["html", "css", "javascript", "Tailwind","AOS","Vite"],
     title: "ShushiMan",
     disc: "Fully Responsive Animated Sushi Restuarant",
+    link:"https://chinese-restuarant.netlify.app"
   },
   {
     img: third,
     langs: ["html", "css", "javascript", "Saas", "Gsap"],
     title: "Crop Stop",
     disc: "A stop for farmers, to help them analyse the climate and soil for better harvest",
+    link:"https://jayadipsahoo.github.io/CropStop/"
   },
   {
     img: fourth,
     langs: ["html", "css", "javascript", "Node.js", "Mongo","ExpressJS"],
     title: "Todo-List",
     disc: "Dynamic TodoList",
+    link:""
   },
 
   
@@ -47,36 +51,42 @@ const smallProjects = [
     langs: ["html", "css", "javascript", "Parallax","Vite"],
     title: "Terror Talks",
     disc: "Parrallax Website",
+    link:'https://github.com/JayadipSahoo/Terror-Talk'
   },
   {
     img: sixth,
     langs: ["html", "css", "javascript", "React","Vite"],
     title: "Contact Card",
     disc: "Dynamic card for work purposes",
+    link:'https://github.com/JayadipSahoo/Contact__card'
   },
   {
     img: seventh,
     langs: ["html", "css", "javascript", "React","Vite","MemeAPI"],
     title: "Meme Generator",
     disc: "Meme Generator using the prpos property of react",
+    link:'meme-geno.netlify.app/'
   },
   {
     img: eigth,
     langs: ["html", "css","Basic","Freecode Camp"],
     title: "Survey Form",
     disc: "General form for any work purposes",
+    link:'https://github.com/JayadipSahoo/SurveyForm'
   },
   {
     img: ninth,
     langs: ["html", "css", "javascript"],
     title: "Dice Game",
     disc: "Simple project with basic javascript functions",
+    link:'https://github.com/JayadipSahoo/DiceGame'
   },
   {
     img: tenth,
     langs: ["html", "css", "javascript", "Saas"],
     title: "3D card hover",
     disc: "When you hover on the cards the characters come out of the card",
+    link:'https://github.com/JayadipSahoo/SchoolHome'
   },
   
 ];
@@ -105,7 +115,7 @@ const Project_page = () => {
     </div>
     <div className="flex flex-wrap justify-between gap-10 my-12">
           {/* cards */}
-          {mainProjects.map(({ img, langs, title, disc }) => {
+          {mainProjects.map(({ img, langs, title, disc,link }) => {
             return (
               <>
                 <Project_card
@@ -113,6 +123,7 @@ const Project_page = () => {
                   langs={langs}
                   title={title}
                   disc={disc}
+                  link={link}
                 />
               </>
             );
@@ -126,7 +137,7 @@ const Project_page = () => {
     </div>
     <div className="flex flex-wrap justify-between gap-10 my-12">
           {/* cards */}
-          {smallProjects.map(({ img, langs, title, disc }) => {
+          {smallProjects.map(({ img, langs, title, disc ,link}) => {
             return (
               <>
                 <Project_card
@@ -134,6 +145,7 @@ const Project_page = () => {
                   langs={langs}
                   title={title}
                   disc={disc}
+                  link={link}
                 />
               </>
             );

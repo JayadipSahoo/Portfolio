@@ -9,7 +9,7 @@ const Contact = () => {
 }
   return (
     <>
-      <div className="px-5 max-w-[1560px] mx-auto mt-20 py-10" id='contact'>
+      <div className="px-10 max-w-[1560px] mx-auto mt-20 py-10" id='contact'>
         {/* top */}
         <div className="">
           {/* header */}

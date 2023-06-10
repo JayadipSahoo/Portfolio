@@ -7,7 +7,7 @@ const Skills = () => {
       languages: ["Python","Javascript","C++","Ansi C"],
     },
     {
-      title: "Frameworks/Librarys",
+      title: "Frameworks",
       languages: [
         
         "Vite",
@@ -18,7 +18,8 @@ const Skills = () => {
         "Node.js",
         "Express.js",
         "JQuery",
-       
+        "SCSS","TailwindCSS",
+        "BulmaCSS"
 
       ],
     },
@@ -38,7 +39,7 @@ const Skills = () => {
    
     {
       title: "Other",
-      languages: ["HTML", "CSS", "EJS", "SCSS","TailwindCSS","BulmaCSS"],
+      languages: ["HTML", "CSS", "EJS", "SCSS","TailwindCSS"],
     },
     
   ];
@@ -71,7 +72,7 @@ const Skills = () => {
                     </div>
                     <div className=" flex gap-2 border-t border-[#ABB2BF] flex-wrap p-2 text-[#0FFF50]">
                       {languages.map((e) => {
-                        return <span>{e}</span>;
+                        return <span key={''}>{e}</span>;
                       })}
                     </div>
                   </div>

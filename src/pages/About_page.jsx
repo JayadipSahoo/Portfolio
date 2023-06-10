@@ -1,4 +1,4 @@
-import Me from "./imgs/man.png"
+import Me from "./imgs/me4.png"
 
 import Shapes from './imgs/shapes.png'
 const skills = [
@@ -85,7 +85,7 @@ const About_page = () => {
           </div>
           {/* right */}
           <div className=" mx-auto">
-            <img className="mx-auto" src={Me} alt="" />
+            <img className="mx-auto h-[600px]" src={Me} alt="" />
           </div>
         </div>
       </div>
