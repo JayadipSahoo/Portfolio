@@ -3,8 +3,14 @@ import first from "./imgs/Project1.png";
 import second from "./imgs/project2.png";
 import third from "./imgs/cropstop.png";
 
+import {Link} from 'react-router-dom'
+
 const Projects = () => {
   // date
+  const handleLinkClick=()=>{
+
+    window.scrollTo(0, 0);
+}
   const projects = [
     {
       img: first,
@@ -43,9 +49,9 @@ const Projects = () => {
           </div>
           {/* right */}
           <div className=" text-white font-medium">
-            <a href="/projects">
+            <Link to="/projects" onClick={handleLinkClick}>
               <span>View all ~~&gt;</span>
-            </a>
+            </Link>
           </div>
         </div>
         {/* bottom */}
