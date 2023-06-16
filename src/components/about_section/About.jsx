@@ -16,7 +16,7 @@ const AboutSec = () => {
           <div className="md:w-[48%] w-full">
             {/* title */}
             <div className=" mb-12">
-              <div  data-aos="fade-right" data-aos-duration="500" className=" text-white w-2/3 font-medium text-[32px] flex items-center gap-2">
+              <div  data-aos="fade-right" className=" text-white w-2/3 font-medium text-[32px] flex items-center gap-2">
                 <div className="">
                   <span className="text-[#0FFF50]">#</span>about-me
                 </div>
@@ -24,7 +24,7 @@ const AboutSec = () => {
               </div>
             </div>
             {/* disc */}
-            <p data-aos="zoom-out-left" data-aos-duration='2500' data-aos-delay='300'  className="text-[#ABB2BF] ">
+            <p data-aos="zoom-out-left"  className="text-[#ABB2BF] ">
               Hola, I am Jayadip
               <br />
               <br />
@@ -47,8 +47,8 @@ const AboutSec = () => {
             </div>
           </div>
           {/* right */}
-          <div data-aos="zoom-in-left" data-aos-duration='2500' data-aos-delay='300' className=" mx-auto">
-            <img className="mx-auto h-[450px]" src={Me} alt="Jayadip" />
+          <div data-aos="zoom-in-left"  className=" mx-auto">
+            <img className="mx-auto h-[400px]" src={Me} alt="Jayadip" />
           </div>
         </div>
       </div>
