@@ -9,15 +9,28 @@ const About = () => {
   useEffect (()=>{
     Aos.init({duration:1000})
   }, [])
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-  
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
-    });
+  window.addEventListener('scroll', function() {
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    if (window.pageYOffset > 100) {
+      scrollToTopBtn.style.display = 'block';
+      scrollToTopBtn.style.opacity = '1';
+    } else {
+      scrollToTopBtn.style.display = 'none';
+      scrollToTopBtn.style.opacity = '0';
+    }
   });
+  
+  document.getElementById('scrollToTopBtn').addEventListener('click', function() {
+    const scrollToTop = window.setInterval(function() {
+      const pos = window.pageYOffset;
+      if (pos > 0) {
+        window.scrollTo(0, pos - 20); // Adjust the scrolling speed by modifying the value (e.g., 20)
+      } else {
+        window.clearInterval(scrollToTop);
+      }
+    }, 15); // Adjust the scrolling interval by modifying the value (e.g., 16)
+  });
+  
   return (
     <>
       <div className="px-10 max-w-[1560px] mx-auto min-h-screen pt-20 flex items-center justify-between flex-wrap">

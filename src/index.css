@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fira Code', monospace;
+    font-family: Cyber;
     background-color:#282C33
 }
 ::-webkit-scrollbar {
@@ -47,10 +47,10 @@
           .cybr-btn {
             --primary: hsl(var(--primary-hue), 100%, calc(var(--primary-lightness, 50) * 1%));
             --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
-            --primary-hue: 110.55;
+            --primary-hue: 136;
             --primary-lightness: 50;
             --color: hsl(0, 0%, 100%);
-            --font-size: 26px;
+            --font-size: 20px;
             --shadow-primary-hue: 180;
             --label-size: 9px;
             --shadow-secondary-hue: 60;
@@ -309,3 +309,77 @@
           .cybr-btn:nth-of-type(2) {
             --primary-hue: 260;
           }
+
+
+
+
+
+
+
+
+
+
+
+          #scrollToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            width: 40px;
+            height: 40px;
+            border: none;
+            background-color: transparent;
+            color: #fff;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            overflow: hidden;
+          }
+          
+          #scrollToTopBtn svg {
+            width: 100%;
+            height: 100%;
+            stroke-width: 2px;
+            fill: none;
+          }
+          
+          #scrollToTopBtn:hover {
+            opacity: 1;
+          }
+          
+
+
+
+
+          
+          #scrollToTopBtn svg {
+            /* Same styles as before */
+            /* ... */
+            transition: stroke-dashoffset 1.9s ease-in-out;
+          }
+          
+          #scrollToTopBtn:hover svg {
+            stroke-dashoffset: 0;
+          }
+          
+
+
+
+          @keyframes fillCircle {
+            0% {
+              stroke-dashoffset: 110;
+            }
+            100% {
+              stroke-dashoffset: 0;
+            }
+          }
+          
+          #scrollToTopBtn:hover svg path {
+            animation: fillCircle 0.9s ease-in-out forwards;
+            stroke-dasharray: 110;
+            stroke-dashoffset: 110;
+            stroke: #39ff14;
+            fill: #39ff14;
+          }
+          

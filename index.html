@@ -14,6 +14,36 @@
   </head>
   <body>
     <div id="root"></div>
+    <button id="scrollToTopBtn" title="Scroll to Top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
+        <path d="M12 19V5M5 12l7-7 7 7"></path>
+      </svg>
+    </button>
+    
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      window.addEventListener('scroll', function() {
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        if (window.pageYOffset > 100) {
+          scrollToTopBtn.style.display = 'block';
+          scrollToTopBtn.style.opacity = '1';
+        } else {
+          scrollToTopBtn.style.display = 'none';
+          scrollToTopBtn.style.opacity = '0';
+        }
+      });
+      
+      document.getElementById('scrollToTopBtn').addEventListener('click', function() {
+        const scrollToTop = window.setInterval(function() {
+          const pos = window.pageYOffset;
+          if (pos > 0) {
+            window.scrollTo(0, pos - 20); // Adjust the scrolling speed by modifying the value (e.g., 20)
+          } else {
+            window.clearInterval(scrollToTop);
+          }
+        }, 15); // Adjust the scrolling interval by modifying the value (e.g., 16)
+      });
+      
+    </script>
   </body>
 </html>
