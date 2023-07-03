@@ -1,4 +1,5 @@
 import "./about.css";
+
 import React from "react";
 import { useEffect ,useRef} from "react";
 import quote from "./imgs/quote.png"
@@ -51,7 +52,7 @@ const About = () => {
       <div className="px-10 max-w-[1560px] mx-auto min-h-screen pt-20 flex items-center justify-between flex-wrap">
         <div  className=" w-10/12 sm:w-8/12 mx-auto">
           <h1 className="font-semibold text-[32px] text-white mb-3 ">
-           I am a <span className ="text-[#0FFF50] tracking-in-expand-fwd">web designer</span> and{" "}
+           I am a <span  className ="text-[#0FFF50] tracking-in-expand-fwd">web designer</span> and{" "}
             <span  className="text-[#0FFF50] tracking-in-expand-fwd">front-end developer</span>
           </h1>
           
@@ -67,19 +68,19 @@ const About = () => {
           </a>
         </div>
         <div className="mx-auto">
-          <div  className="">
-            <img src={Man} alt="" className="h-[600px]"  />
+          <div  className="shake-horizontal">
+            <img src={Man} alt="" className="h-[600px] "  />
           </div>
           <div className="border flex items-center gap-2 ml-5 border-[#ABB2BF] p-2 text-[#ABB2BF]">
             <div className="w-4 h-4 bg-[#0FFF50]"></div>
-            <div className="pl-8">
+            <div className="pl-8  shake-horizontal">
               Currently working on <span className="text-white">Full-Stack</span>
             </div>
           </div>
         </div>
       </div>
       <div data-aos="fade-up" className=" px-5 py-10">
-        <img className="mx-auto" src={quote} alt="" />
+        <img className="mx-auto flicker-in-1" src={quote} alt="" />
       </div>
     </>
   );

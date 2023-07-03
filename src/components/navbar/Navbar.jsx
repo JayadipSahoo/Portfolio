@@ -1,5 +1,6 @@
 import Logo from './imgs/js.png'
 import Close from './imgs/close.png'
+import '../first_section_about/about.css'
 import { NavLink } from "react-router-dom";
 import { useState} from "react";
 
@@ -15,7 +16,7 @@ const Navbar = () => {
             {/* logo */}
             <NavLink to='/'>
             <div className="img">
-              <img src={Logo} className='w-12 h-15' alt="" />
+              <img src={Logo} className='w-12 h-15 jello-horizontal' alt="" />
             </div>
             </NavLink>
           Jayadip Sahoo
@@ -23,22 +24,22 @@ const Navbar = () => {
           <div className="right flex items-center">
             <div className={`menu duration-300 flex-col  justify-center md:flex-row flex fixed w-full ${!toggle ? `right-[-100%] top-0 bottom-0` : `right-0 top-0 bottom-0`} bg-[#282C33] md:static`}>
               
-              <NavLink to="/">
+              <NavLink to="/" className='jello-horizontal'>
                 <li className="text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4 hover:border-b-2 border-[#0FFF50]-500 font-medium">
                   <span className="text-[#0FFF50] ">#</span>home
                 </li>
               </NavLink>
-              <NavLink to="/projects">
+              <NavLink to="/projects" className='jello-horizontal'>
                 <li className="text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4 hover:border-b-2 border-green-500 font-medium">
                   <span className="text-[#0FFF50] font-medium">#</span>work
                 </li>
               </NavLink>
-              <NavLink to="/about">
+              <NavLink to="/about"className='jello-horizontal'>
                 <li className="text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4 hover:border-b-2 border-green-500 font-medium">
                   <span className="text-[#0FFF50] font-medium">#</span>about-me
                 </li>
               </NavLink>
-              <NavLink to="/contact">
+              <NavLink to="/contact" className='jello-horizontal'>
                 <li className="text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4 hover:border-b-2 border-green-500 font-medium">
                   <span className="text-[#0FFF50] font-medium">#</span>contacts
                 </li>

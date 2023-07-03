@@ -1,8 +1,9 @@
+
 const Project_card = ({ img, langs, title, disc ,link}) => {
   return (
     <>
 
-      <div className="border mx-auto w-[90%] md:w-[48%] lg:w-[30%] border-[#ABB2BF] p-0">
+      <div className="border mx-auto w-[90%] md:w-[48%] lg:w-[30%] border-[#ABB2BF]  p-0">
         {/* img */}
         <div className="">
           <img className=" w-full" src={img} alt="" />
