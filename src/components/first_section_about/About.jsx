@@ -1,10 +1,13 @@
 import "./about.css";
-import { useEffect } from "react";
+import React from "react";
+import { useEffect ,useRef} from "react";
 import quote from "./imgs/quote.png"
 import Man from "./imgs/me.png"
 import Aos from "aos";
 import 'aos/dist/aos.css'
+import Typed from 'typed.js';
 
+ 
 const About = () => {
   useEffect (()=>{
     Aos.init({duration:1000})
@@ -24,23 +27,36 @@ const About = () => {
     const scrollToTop = window.setInterval(function() {
       const pos = window.pageYOffset;
       if (pos > 0) {
-        window.scrollTo(0, pos - 20); // Adjust the scrolling speed by modifying the value (e.g., 20)
-      } else {
+        window.scrollTo(0, pos - 20); 
         window.clearInterval(scrollToTop);
       }
-    }, 15); // Adjust the scrolling interval by modifying the value (e.g., 16)
+    }, 15); 
   });
-  
+
+
+  const el =useRef(null);
+   React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ['I craft responsive websites where craetivity meets technology',  'I craft responsive websites where technologies meet creativity.'],
+      typeSpeed: 50,
+    });
+  return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <>
       <div className="px-10 max-w-[1560px] mx-auto min-h-screen pt-20 flex items-center justify-between flex-wrap">
         <div  className=" w-10/12 sm:w-8/12 mx-auto">
           <h1 className="font-semibold text-[32px] text-white mb-3">
            I am a <span className="text-[#0FFF50]">web designer</span> and{" "}
-            <span className="text-[#0FFF50]">front-end developer</span>
+            <span  className="text-[#0FFF50]">front-end developer</span>
           </h1>
+          
           <p className="text-[#ABB2BF] my-6">
-            I craft responsive websites where technologies meet creativity
+            <span ref={el} />
           </p>
           <a href="#contact">
           <button className=" cybr-btn">
