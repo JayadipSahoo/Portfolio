@@ -1,4 +1,3 @@
-
 const Project_card = ({ img, langs, title, disc ,link}) => {
   return (
     <>

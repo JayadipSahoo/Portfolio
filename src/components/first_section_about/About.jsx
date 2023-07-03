@@ -38,7 +38,7 @@ const About = () => {
   const el =useRef(null);
    React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['I craft responsive websites where craetivity meets technology',  'I craft responsive websites where technologies meet creativity.'],
+      strings: [ 'Front-end Developer','Back-end Developer', 'Full Stack Developer'],
       typeSpeed: 50,
     });
   return () => {
@@ -52,12 +52,12 @@ const About = () => {
       <div className="px-10 max-w-[1560px] mx-auto min-h-screen pt-20 flex items-center justify-between flex-wrap">
         <div  className=" w-10/12 sm:w-8/12 mx-auto">
           <h1 className="font-semibold text-[32px] text-white mb-3 ">
-           I am a <span  className ="text-[#0FFF50] tracking-in-expand-fwd">web designer</span> and{" "}
-            <span  className="text-[#0FFF50] tracking-in-expand-fwd">front-end developer</span>
+           I am a <span  className ="text-[#0FFF50] ">web designer</span> and{" "}
+            <span  className="text-[#0FFF50]" ref={el}>front-end developer</span>
           </h1>
           
-          <p className="text-[#ABB2BF] my-6">
-            <span ref={el} />
+          <p className="text-[#ABB2BF] my-6 tracking-in-expand-fwd">
+              I craft responsive websites where technologies meet creativity.
           </p>
           <a href="#contact">
           <button className=" cybr-btn">
