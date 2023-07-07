@@ -1,6 +1,7 @@
 import Me from "./imgs/me4.png"
-
+import { motion, useScroll } from "framer-motion";
 import Shapes from './imgs/shapes.png'
+import '../App.css'
 const skills = [
   {
     title: "Languages",
@@ -43,7 +44,14 @@ const skills = [
   
 ];
 const About_page = () => {
+  const { scrollYProgress } = useScroll();
+
+
   return <>
+  <motion.div
+        className="progress-bar"
+        style={{ scaleX: scrollYProgress }}
+      />
   <div className="px-5 max-w-[1560px] mx-auto mt-20 py-10">
         {/* bottom */}
         <div className=" flex-wrap flex items-center justify-between">
