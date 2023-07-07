@@ -1,6 +1,9 @@
 body{
   overflow-x: hidden;
 }
+.box{
+  box-shadow: 0 0 10px 1px #0FFF50
+}
 .tracking-in-expand-fwd {
 	-webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;

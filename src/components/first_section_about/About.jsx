@@ -71,7 +71,7 @@ const About = () => {
           <div  className="shake-horizontal">
             <img src={Man} alt="" className="h-[600px] "  />
           </div>
-          <div className="border flex items-center gap-2 ml-5 border-[#ABB2BF] p-2 text-[#ABB2BF]">
+          <div className="border flex items-center gap-2 ml-5 border-[#ABB2BF] p-2 mt-2 mb-2 text-[#ABB2BF] box">
             <div className="w-4 h-4 bg-[#0FFF50]"></div>
             <div className="pl-8  shake-horizontal">
               Currently working on <span className="text-white">Full-Stack</span>

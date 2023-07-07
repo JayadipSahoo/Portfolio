@@ -1,4 +1,5 @@
 import Shapes from './imgs/shapes.png'
+import'./style.css'
 
 const Skills = () => {
   const skills = [
@@ -52,7 +53,7 @@ const Skills = () => {
             <div className="">
               <span className="text-[#0FFF50]">#</span>skills
             </div>
-            <div className="line w-1/3 h-px bg-[#0FFF50]"></div>
+            <div className="line w-2/3 h-px bg-[#0FFF50]"></div>
           </div>
         </div>
         {/* bottom */}
@@ -62,11 +63,11 @@ const Skills = () => {
             <img className=" w-full mx-auto" src={Shapes} alt="" />
           </div>
           {/* right & mapping */}
-          <div data-aos="fade-up-left"  className=" mx-auto flex justify-around md:justify-end flex-wrap w-10/12 md:w-1/2 gap-4">
+          <div data-aos="fade-up-left"  className=" mx-auto flex justify-around md:justify-end flex-wrap w-10/12 md:w-1/2 gap-9">
             {skills.map(({ title, languages }) => {
               return (
                 <>
-                  <div className="w-[90%] sm:w-[45%] lg:w-[30%] border border-[#ABB2BF]">
+                  <div className="w-[90%] sm:w-[45%] lg:w-[30%] border border-[#ABB2BF] box">
                     <div className=" p-2">
                       <h2 className=" font-semibold">{title}</h2>
                     </div>

@@ -1,6 +1,6 @@
 import Discord from './imgs/linkedIn.jpg' 
 import Email from './imgs/Email.png' 
-
+import './style.css'
 import {Link} from 'react-router-dom'
 const Contact = () => {
   const handleLinkClick=()=>{
@@ -43,7 +43,7 @@ const Contact = () => {
           {/* right */}
           <div className=" mx-auto">
             {/* box */}
-            <div  data-aos='fade-left' data-aos-duration='1500' className="border border-[#ABB2BF] p-4">
+            <div  data-aos='fade-left' data-aos-duration='1500' className="border border-[#ABB2BF] p-4 box">
               <h2 className=" mb-4 text-white font-semibold">
                 Message me here
               </h2>

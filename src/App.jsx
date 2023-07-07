@@ -12,7 +12,7 @@ function App() {
   return (
     <>
    
-    <div className="bg-[#282C33]">
+    <div className="bg-[#15171a]">
    
       <Navbar />
       

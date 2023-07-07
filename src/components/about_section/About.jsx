@@ -20,7 +20,7 @@ const AboutSec = () => {
                 <div className="">
                   <span className="text-[#0FFF50]">#</span>about-me
                 </div>
-                <div className="line w-1/3 h-px bg-[#0FFF50]"></div>
+                <div className="line w-2/3 h-px bg-[#0FFF50]"></div>
               </div>
             </div>
             {/* disc */}
