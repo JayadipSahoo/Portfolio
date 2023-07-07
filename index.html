@@ -12,8 +12,8 @@
   />
  <style>
   html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
  </style>
   </head>
   <body>
@@ -41,11 +41,11 @@
         const scrollToTop = window.setInterval(function() {
           const pos = window.pageYOffset;
           if (pos > 0) {
-            window.scrollTo(0, pos - 20); // Adjust the scrolling speed by modifying the value (e.g., 20)
+            window.scrollTo(0, pos -20000); // Adjust the scrolling speed by modifying the value (e.g., 20)
           } else {
             window.clearInterval(scrollToTop);
           }
-        }, 15); // Adjust the scrolling interval by modifying the value (e.g., 16)
+        }, 500); // Adjust the scrolling interval by modifying the value (e.g., 16)
       });
       
     </script>
