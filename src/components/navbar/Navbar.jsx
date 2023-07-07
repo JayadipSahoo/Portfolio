@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <>
 
-      <div className="mb-[20px] pt-0 z-30 fixed top-0 left-0 right-0 bg-[#15171a]">
+      <div className="mb-[20px] pt-0 z-30 fixed top-0 left-0 right-0 bg-[#15171a] opacity-90">
         <div className=" px-10 max-w-[1560px] mx-auto flex items-center justify-between pt-6 my-2">
           <div className="left flex gap-2 items-center font-bold text-white text-base">
             {/* logo */}

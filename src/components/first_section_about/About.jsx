@@ -2,7 +2,7 @@ import "./about.css";
 
 import React from "react";
 import { useEffect ,useRef} from "react";
-import quote from "./imgs/quote.png"
+
 import Man from "./imgs/me.png"
 import Aos from "aos";
 import 'aos/dist/aos.css'
@@ -79,9 +79,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div data-aos="fade-up" className=" px-5 py-10">
-        <img className="mx-auto flicker-in-1" src={quote} alt="" />
-      </div>
+      
     </>
   );
 };

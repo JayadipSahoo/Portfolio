@@ -55,9 +55,7 @@ const Projects = () => {
           </div>
         </div>
         {/* bottom */}
-        <div data-aos="zoom-in"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="1500" className="flex flex-wrap justify-between gap-4 my-12">
+        <div  className="flex flex-wrap justify-between gap-4 my-12">
           {/* cards */}
           {projects.map(({ img, langs, title, disc,link }) => {
             return (
