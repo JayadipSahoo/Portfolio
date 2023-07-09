@@ -69,7 +69,7 @@ const About = () => {
         </div>
         <div className="mx-auto">
           <div  className="shake-horizontal">
-            <img src={Man} alt="" className="h-[600px] "  />
+            <img src={Man} alt="" className="h-[600px]"  />
           </div>
           <div className="border flex items-center gap-2 ml-5 border-[#ABB2BF] p-2 mt-2 mb-2 text-[#ABB2BF] box">
             <div className="w-4 h-4 bg-[#0FFF50]"></div>

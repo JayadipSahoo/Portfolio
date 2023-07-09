@@ -25,7 +25,7 @@ const Contact = () => {
         {/* bottom */}
         <div className=" flex items-start flex-wrap gap-10 justify-between">
           {/* left */}
-          <div className="left w-full md:w-1/2">
+          <div className="left w-full md:w-1/2 mr-auto">
             <p className=" text-[#ABB2BF]">
               I’m interested in freelance opportunities. However, if you have
               other request or question, don’t hesitate to contact me

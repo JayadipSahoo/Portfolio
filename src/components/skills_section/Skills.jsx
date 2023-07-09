@@ -1,6 +1,6 @@
 import Shapes from './imgs/shapes.png'
 import'./style.css'
-
+import MouseTrail from '../mouse/mouse' 
 const Skills = () => {
   const skills = [
     {
@@ -83,6 +83,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
+      <MouseTrail/>
     </>
   );
 };

@@ -13,7 +13,7 @@ const AboutSec = () => {
         {/* bottom */}
         <div className=" flex-wrap flex items-center justify-between">
           {/* left */}
-          <div className="md:w-[48%] w-full">
+          <div className="md:w-[48%] w-full mr-auto">
             {/* title */}
             <div className=" mb-12">
               <div  data-aos="fade-right" className=" text-white w-2/3 font-medium text-[32px] flex items-center gap-2">
@@ -23,8 +23,9 @@ const AboutSec = () => {
                 <div className="line w-2/3 h-px bg-[#0FFF50]"></div>
               </div>
             </div>
+          
             {/* disc */}
-            <p data-aos="zoom-out-left"  className="text-[#ABB2BF] ">
+            <p data-aos="zoom-out-left"  className="text-[#ABB2BF]  ">
               Hola, I am Jayadip
               <br />
               <br />
