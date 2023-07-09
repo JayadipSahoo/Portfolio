@@ -11,9 +11,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
  <style>
-  html {
-  scroll-behavior: smooth;
-}
+  
  </style>
   </head>
   <body>
@@ -41,7 +39,7 @@
         const scrollToTop = window.setInterval(function() {
           const pos = window.pageYOffset;
           if (pos > 0) {
-            window.scrollTo(0, pos -20000); // Adjust the scrolling speed by modifying the value (e.g., 20)
+            window.scrollTo(0, pos -200); // Adjust the scrolling speed by modifying the value (e.g., 20)
           } else {
             window.clearInterval(scrollToTop);
           }
