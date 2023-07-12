@@ -40,6 +40,7 @@ const About = () => {
     const typed = new Typed(el.current, {
       strings: [ 'Front-end Developer','Back-end Developer', 'Full Stack Developer'],
       typeSpeed: 50,
+      backSpeed:30,
     });
   return () => {
       // Destroy Typed instance during cleanup to stop animation

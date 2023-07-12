@@ -9,7 +9,7 @@ const MouseTrail = () => {
       const particle = document.createElement('div');
       particle.classList.add('particle');
 
-      const colors = ['#FFB300', '#FF8800', '#FF4444', '#FF00FF', '#00FF00', '#00FFFF'];
+      const colors = ['#ffff', '#00FF00', '#00FFFF','#ffff', '#00FF00', '#00FFFF'];
       const color = colors[Math.floor(Math.random() * colors.length)];
       particle.style.background = color;
 
