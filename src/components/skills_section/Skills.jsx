@@ -59,11 +59,11 @@ const Skills = () => {
         {/* bottom */}
         <div className=" flex flex-wrap gap-10 justify-between items-center text-white">
           {/* left */}
-          <div data-aos="fade-up-right"  className="mx-auto">
+          <div data-aos='fade-right' data-aos-duration='500'  className="mx-auto">
             <img className=" w-full mx-auto" src={Shapes} alt="" />
           </div>
           {/* right & mapping */}
-          <div data-aos="fade-up-left"  className=" mx-auto flex justify-around md:justify-end flex-wrap w-10/12 md:w-1/2 gap-9">
+          <div data-aos='fade-right' data-aos-duration='500'  className=" mx-auto flex justify-around md:justify-end flex-wrap w-10/12 md:w-1/2 gap-9">
             {skills.map(({ title, languages }) => {
               return (
                 <>
