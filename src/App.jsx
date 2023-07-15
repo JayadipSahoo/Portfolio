@@ -25,6 +25,7 @@ function App() {
         <Route path="/contact" element={<Contact_page />} />
       </Routes>
       <MouseTrail/>
+      
       <Footer/>
      
     </div>

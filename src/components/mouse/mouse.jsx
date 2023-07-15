@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect} from 'react';
 import './mouse.css'; // Create a CSS file for styling
 
 const MouseTrail = () => {
@@ -38,5 +38,9 @@ const MouseTrail = () => {
 
   return <div id="particle-container" />;
 };
+
+
+
+
 
 export default MouseTrail;
