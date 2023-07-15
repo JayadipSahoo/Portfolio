@@ -25,7 +25,7 @@ const AboutSec = () => {
             </div>
           
             {/* disc */}
-            <p data-aos="zoom-out-left"  className="text-[#ABB2BF]  ">
+            <p data-aos='fade-right' data-aos-duration='1500'   className="text-[#ABB2BF]  ">
               Hola, I am Jayadip
               <br />
               <br />
@@ -48,7 +48,7 @@ const AboutSec = () => {
             </div>
           </div>
           {/* right */}
-          <div data-aos="zoom-in-left"  className=" mx-auto">
+          <div data-aos="fade-left" data-aos-duration='2500' className=" mx-auto">
             <img className="mx-auto h-[400px]" src={Me} alt="Jayadip" />
           </div>
         </div>
